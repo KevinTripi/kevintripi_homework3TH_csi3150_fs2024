@@ -1,0 +1,341 @@
+/* General Reset */
+body {
+    --text-primary: #ffffff; 
+    --text-secondary: #FA8072; 
+    font-family: Arial, sans-serif;
+    color: var(--text-primary);
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section Full Height (100vh) */
+.hero {
+    background: url('../assets/1.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: var(--text-secondary);
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
+
+.down-icon {
+    font-size: 36px;
+    color: var(--text-secondary);
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/* Other Sections - 80% Height (80vh) */
+section:not(.hero) {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Intro Section */
+.intro {
+    background: url('../assets/2.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: left;
+    padding: 20px;
+    gap: 20px;
+    align-items: flex-start; 
+}
+
+.intro h2 {
+    font-size: 3rem;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+    padding-right: 20px; 
+}
+
+.intro-content {
+    background: rgba(30, 60, 88, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin-top: 20px; 
+}
+
+.intro-content p {
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.intro-content .button-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.intro-content button {
+    background-color: var(--text-secondary);
+    border: none;
+    color: var(--text-primary);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Tours Section */
+.tours {
+    background: url('../assets/3.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    flex-direction: column;
+}
+
+.tours h2 {
+    font-size: 3rem;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+}
+
+.tour-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    width: 250px; 
+    height: 350px; 
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card1 { background-image: url('../assets/card1.jpg'); }
+.card2 { background-image: url('../assets/card2.jpg'); }
+.card3 { background-image: url('../assets/card3.jpg'); }
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--text-primary);
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-overlay p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.down-icon {
+    font-size: 24px;
+    color: var(--text-secondary);
+    margin-top: 5px;
+}
+
+.read-more-btn {
+    background-color: var(--text-secondary);
+    color: var(--text-primary);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Special Offers Section */
+.special {
+    background: url('../assets/4.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: var(--text-primary);
+}
+
+.special-left {
+    flex: 1;
+    padding-right: 20px;
+    padding: 50px;
+}
+
+.special-left h2 {
+    font-size: 3rem;
+    color: var(--text-secondary);
+}
+
+.special-right {
+    flex: 1;
+    padding-left: 20px;
+    font-size: 1.2rem;
+}
+
+/* Stats Section */
+.stats {
+    background: url('../assets/5.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    gap: 100px;
+}
+
+.stat {
+    background: rgba(0, 0, 0, 0.9);
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column; /* Stack number and text */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Number styling in the stat circle */
+.stat h3 {
+    font-size: 2em;
+    color: var(--text-secondary); 
+    margin: 0;
+}
+
+/* Descriptive text styling in the stat circle */
+.stat p {
+    color: var(--text-primary); /* Primary color for descriptive text */
+    font-size: 1em; 
+    margin: 0;
+}
+
+/* author Section */
+.author {
+    background: url('../assets/6.jpg') no-repeat center center;
+    background-size: cover;
+    text-align: center;
+    flex-direction: column;
+    padding: 50px 20px;
+}
+
+.author-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.author blockquote {
+    font-style: italic;
+    color: var(--text-secondary);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.img-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: 0;
+}
+
+.img-container img {
+    width: 25%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Contact Us Section */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../assets/7.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 20px;
+    color: var(--text-primary);
+    gap: 10px; /* Reduced gap to bring contact-info and contact-form closer */
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;
+    max-width: 45%;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: var(--text-secondary); /* Salmon text color */
+}
+
+.contact-form button {
+    background-color: var(--text-secondary);
+    color: var(--text-primary);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
