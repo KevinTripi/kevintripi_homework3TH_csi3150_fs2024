@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japan Travel</title>
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     <!-- Google Icons -->
+<!-- Font Awesome CDN Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-dyBoi9pd7oRmwb0JAS2X+yoUnlGk60TgKr2Ok9zxf5eMeEpU9l8MOW1R1uAUGMKm" crossorigin="anonymous">
 </head>
 <body>
 
@@ -116,18 +119,31 @@
 <section class="contact">
     <div class="contact-info">
         <h2>Contact Us</h2>
-        <p>
-            Toll Free: 800-208-0200<br>
-            Osaka: 907-245-0200<br>
-            Fax: 907-245-0600<br>
-            Email: info@Japan.com
-        </p>
+
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="icon">
+                <img src="../assets/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="icon">
+                <img src="../assets/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://instagram.com" target="_blank" class="icon">
+                <img src="../assets/instagram.svg" alt="Instagram">
+            </a>
+        </div>
+        
+
+        <p>Toll Free: 800-208-0200</p>
+        <p>Anchorage: 907-245-0200</p>
+        <p>Fax: 907-245-0600</p>
+        <p>Email: info@alaska.com</p>
     </div>
+
     <div class="contact-form">
         <form>
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Message" required></textarea>
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Message"></textarea>
             <button type="submit">Submit</button>
         </form>
     </div>

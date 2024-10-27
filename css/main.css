@@ -281,7 +281,6 @@ section:not(.hero) {
     height: 100vh;
     object-fit: cover;
 }
-
 /* Contact Us Section */
 .contact {
     display: flex;
@@ -301,17 +300,38 @@ section:not(.hero) {
     text-align: center;
 }
 
+/* Header Styling */
 .contact-info h2 {
     font-size: 2em;
     color: var(--text-secondary);
     margin-bottom: 20px;
 }
+/* Social Icons Styling */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
 
+.social-icons .icon img {
+    width: 40px;
+    height: 40px; /* Ensures SVGs are 40x40 pixels */
+    transition: transform 0.3s ease;
+}
+
+.social-icons .icon:hover img {
+    transform: scale(1.1); /* Slight scale on hover for effect */
+}
+
+
+/* Contact Info Paragraphs */
 .contact-info p {
     color: var(--text-primary);
     line-height: 1.6;
 }
 
+/* Form Styling */
 .contact-form form {
     display: flex;
     flex-direction: column;
@@ -325,9 +345,18 @@ section:not(.hero) {
 .contact-form textarea {
     width: 100%;
     padding: 10px;
-    border: none;
+    border: 5px solid var(--text-primary); /* 10px white border */
     border-radius: 5px;
-    color: var(--text-secondary); /* Salmon text color */
+    color: var(--text-secondary); /* Text color */
+    background-color: transparent; /* Transparent background */
+    font-size: 1rem;
+}
+
+/* White placeholder text */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: var(--text-primary); /* White placeholder text */
+    opacity: 1; /* Ensures white color displays properly */
 }
 
 .contact-form button {
