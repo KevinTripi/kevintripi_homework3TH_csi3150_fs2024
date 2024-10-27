@@ -1,4 +1,4 @@
-/* General Reset */
+
 body {
     --text-primary: #ffffff; 
     --text-secondary: #FA8072; 
@@ -225,16 +225,15 @@ section:not(.hero) {
     padding: 20px;
 }
 
-/* Number styling in the stat circle */
+
 .stat h3 {
     font-size: 2em;
     color: var(--text-secondary); 
     margin: 0;
 }
 
-/* Descriptive text styling in the stat circle */
 .stat p {
-    color: var(--text-primary); /* Primary color for descriptive text */
+    color: var(--text-primary); 
     font-size: 1em; 
     margin: 0;
 }
@@ -290,7 +289,7 @@ section:not(.hero) {
     background-size: cover;
     padding: 50px 20px;
     color: var(--text-primary);
-    gap: 10px; /* Reduced gap to bring contact-info and contact-form closer */
+    gap: 10px; 
 }
 
 .contact-info,
@@ -316,12 +315,12 @@ section:not(.hero) {
 
 .social-icons .icon img {
     width: 40px;
-    height: 40px; /* Ensures SVGs are 40x40 pixels */
+    height: 40px; 
     transition: transform 0.3s ease;
 }
 
 .social-icons .icon:hover img {
-    transform: scale(1.1); /* Slight scale on hover for effect */
+    transform: scale(1.1); 
 }
 
 
@@ -345,18 +344,18 @@ section:not(.hero) {
 .contact-form textarea {
     width: 100%;
     padding: 10px;
-    border: 5px solid var(--text-primary); /* 10px white border */
+    border: 5px solid var(--text-primary); 
     border-radius: 5px;
     color: var(--text-secondary); /* Text color */
-    background-color: transparent; /* Transparent background */
+    background-color: transparent; 
     font-size: 1rem;
 }
 
-/* White placeholder text */
+
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
-    color: var(--text-primary); /* White placeholder text */
-    opacity: 1; /* Ensures white color displays properly */
+    color: var(--text-primary);
+    opacity: 1; 
 }
 
 .contact-form button {
